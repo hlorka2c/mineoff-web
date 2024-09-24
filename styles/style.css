@@ -87,6 +87,10 @@ body {
     transition: all .3s;
 }
 
+.offer__inner-server--active {
+    background-color: #93CE13;
+}
+
 .offer__inner-server:hover {
     background-color: #93CE13;
 }
@@ -131,6 +135,12 @@ body {
     height: max-content;
     transition: all .3s;
     opacity: 0;
+    visibility: hidden;
+}
+
+.modal--active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal__header {
