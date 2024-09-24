@@ -256,10 +256,35 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+    .modal {
+        max-width: 400px;
+    }
+
     .offer__inner-server {
         font-size: 36px;
         line-height: 36px;
         padding: 24px;
+    }
+
+    .modal__desc {
+        margin-top: 42px;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .modal__desc:last-of-type {
+        margin-top: 24px;
+    }
+
+    .modal__form-input {
+        margin-top: 45px;
+        font-size: 24px;
+        height: 50px;
+    }
+
+    .modal__form-submit {
+        margin-top: 24px;
+        width: 100%;
     }
 
     .offer__inner-servers {
@@ -267,6 +292,36 @@ body {
     }
 
     body {
-        padding: 45px 0;
+        padding: 45px 18px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .modal {
+        max-width: 300px;
+    }
+
+    .modal__header {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .modal__desc {
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 24px;
+    }
+
+    .modal__desc:last-of-type {
+        margin-top: 16px;
+    }
+
+    .modal__form-input {
+        margin-top: 24px;
+    }
+
+    .modal__form-submit {
+        margin-top: 16px;
+        font-size: 24px;
     }
 }

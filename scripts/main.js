@@ -5,7 +5,6 @@ const serverDOM = document.querySelector('.offer__inner-server'),
 
 serverDOM.addEventListener('click', function (event) {
     setTimeout(showModal(modalDOM), 500);
-
     event.target.classList.add(activeServerDOMClass);
 
     const closeDOM = modalDOM.querySelector('.modal__header-close');
