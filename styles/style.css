@@ -1,0 +1,181 @@
+body {
+    background-color: #050509;
+    color: #ffffff;
+    font-family: 'Minecraft Rus';
+    padding: 70px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 105px;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+html,
+body {
+    height: max-content;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 24px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.discord {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 20px 24px;
+    background-color: #6663F2;
+    border-radius: 15px;
+    font-size: 24px;
+    transition: all .3s;
+}
+
+.discord:hover {
+    background-color: #7d83f1;
+}
+
+.main {
+    padding: auto 0;
+}
+
+.offer {
+    position: relative;
+}
+
+.offer__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    max-width: 700px;
+    align-items: center;
+}
+
+.offer__inner-subtitle {
+    font-size: 32px;
+    max-width: 688px;
+    text-align: center;
+}
+
+.offer__inner-servers {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.offer__inner-server {
+    border: 5px solid #181820;
+    padding: 30px 40px;
+    border-radius: 30px;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    transition: all .3s;
+}
+
+.offer__inner-server:hover {
+    background-color: #93CE13;
+}
+
+.offer__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    max-width: 36%;
+    width: auto;
+}
+
+.offer__img-inner {
+    position: relative;
+}
+
+.offer__img-bg {
+    max-width: 100%;
+}
+
+.offer__img-main {
+    position: absolute;
+    left: 0;
+    margin: auto 0;
+    max-width: 85%;
+}
+
+@media screen and (max-width: 1200px) {
+    .offer .container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .offer__inner {
+        max-width: none;
+        width: 100%;
+    }
+
+    .offer__inner-title {
+        width: 100%;
+    }
+
+    .offer__inner-subtitle {
+        max-width: none;
+    }
+
+    .offer__inner-servers {
+        gap: 16px;
+    }
+
+    .offer__inner-server {
+        width: 100%;
+    }
+
+    .offer__img {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        max-width: none;
+        margin-right: -45%;
+    }
+
+    .offer__img-main {
+        max-width: 60%;
+        bottom: -5%;
+    }
+
+    body {
+        padding: 70px 0 45px 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .offer__inner-server {
+        font-size: 36px;
+        line-height: 36px;
+        padding: 24px;
+    }
+
+    .offer__inner-servers {
+        overflow-x: scroll;
+    }
+
+    body {
+        padding: 45px 0;
+    }
+}
