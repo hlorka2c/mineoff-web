@@ -2,7 +2,6 @@ body {
     background-color: #050509;
     color: #ffffff;
     font-family: 'Minecraft Rus';
-    padding: 70px 0 0;
     display: flex;
     flex-direction: column;
     gap: 105px;
@@ -23,6 +22,10 @@ body {
     margin: 0 auto;
     max-width: 1280px;
     padding: 0 24px;
+}
+
+.header {
+    margin-top: 70px;
 }
 
 .header__inner {
@@ -248,13 +251,17 @@ body {
     }
 
     body {
-        padding: 70px 0 45px 0;
+        padding-bottom: 45px;
     }
 }
 
 @media screen and (max-width: 800px) {
     .modal {
         max-width: 400px;
+    }
+
+    .header {
+        margin-top: 45px;
     }
 
     .offer__inner-server {
@@ -289,7 +296,7 @@ body {
     }
 
     body {
-        padding: 45px 18px;
+        padding: 0 18px;
     }
 }
 
