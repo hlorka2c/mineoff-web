@@ -11,52 +11,97 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <img src="images/logo.png" class="logo" alt="logo Mineoff">
-                <a href="#" class="discord">Discord</a>
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <section class="offer">
+    <div class="wrap">
+        <header class="header">
             <div class="container">
-                <div class="offer__inner">
-                    <img src="images/title.png" class="offer__inner-title" alt="Mineoff">
-                    <h1 class="offer__inner-subtitle">Проект, призванный подарить Вам улыбку!</h1>
-                    <ul class="offer__inner-servers">
-                        <li class="offer__inner-server">OF</li>
-                        <li class="offer__inner-server">?</li>
-                        <li class="offer__inner-server">?</li>
-                        <li class="offer__inner-server">?</li>
-                    </ul>
+                <div class="header__inner">
+                    <img src="images/logo.png" class="logo" alt="logo Mineoff">
+                    <a href="#" class="discord">
+                        <svg class="discord__img" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="50" height="50" fill="url(#pattern0_18_32)" />
+                            <defs>
+                                <pattern id="pattern0_18_32" patternContentUnits="objectBoundingBox" width="1"
+                                    height="1">
+                                    <use xlink:href="#image0_18_32" transform="scale(0.02)" />
+                                </pattern>
+                                <image id="image0_18_32" width="50" height="50"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAxHpUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHjabVBRDsMgCP3nFDuCCiocx7Yu2Q12/IFS0zZ7iU/gkScC/ft5w8uQIgHlykVKCQoSktQ04DDRBsdAgwcwuRbvdVhC0hJa50y5eP9Zj8tgXk2jfDHi3YXtLgi5Pz+M/CG0iWyIw41kXyMPIbpBm98KRbhev7D1cAfPA0ZYh/cyeeZUdXtH1iKm1DFiUEbkOQDaIcCmgShrYo3aYDErExafRBfyb08n4Afp0Fkrwr4qwgAAAYRpQ0NQSUNDIHByb2ZpbGUAAHicfZE9SMNAHMVfU8UPKoIGKeKQoTrZRUUcSxWLYKG0FVp1MLn0C5o0JCkujoJrwcGPxaqDi7OuDq6CIPgB4uzgpOgiJf4vKbSI9eC4H+/uPe7eAUK9zDSrKwJoum0mY1Epk12Vel7RhyBEjGBIZpYRTy2m0XF83cPH17swz+p87s8xoOYsBvgk4ggzTJt4g3h20zY47xOLrCirxOfEkyZdkPiR64rHb5wLLgs8UzTTyXlikVgqtLHSxqxoasQzxCFV0ylfyHisct7irJWrrHlP/sJATl9JcZ3mGGJYQhwJSFBQRQll2AjTqpNiIUn70Q7+UdefIJdCrhIYORZQgQbZ9YP/we9urfz0lJcUiALdL47zMQ707AKNmuN8HztO4wTwPwNXestfqQNzn6TXWlroCBjcBi6uW5qyB1zuAMEnQzZlV/LTFPJ54P2MvikLDN8C/Wteb819nD4Aaepq+QY4OAQmCpS93uHdve29/Xum2d8PpnlyuzPww2sAAA12aVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA0LjQuMC1FeGl2MiI+CiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgICB4bWxuczpHSU1QPSJodHRwOi8vd3d3LmdpbXAub3JnL3htcC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgeG1wTU06RG9jdW1lbnRJRD0iZ2ltcDpkb2NpZDpnaW1wOmFhMmEzY2FmLTg5ZmItNDQ3Mi1hNTA2LTc4ZjFjODc2NmM1MSIKICAgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyNTZkYWI2Ny1hN2IzLTQxYWUtOTNiYy1hOTViZjk5NTE1YjYiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo0NGM4M2E5Yy04NThmLTQ4YjItYjFkZi0zNmM2NTYyN2RkOTAiCiAgIGRjOkZvcm1hdD0iaW1hZ2UvcG5nIgogICBHSU1QOkFQST0iMi4wIgogICBHSU1QOlBsYXRmb3JtPSJXaW5kb3dzIgogICBHSU1QOlRpbWVTdGFtcD0iMTcyNzIwOTczOTY2NjkwMCIKICAgR0lNUDpWZXJzaW9uPSIyLjEwLjM4IgogICB0aWZmOk9yaWVudGF0aW9uPSIxIgogICB4bXA6Q3JlYXRvclRvb2w9IkdJTVAgMi4xMCIKICAgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyNDowOToyNFQyMzoyODo0NiswMzowMCIKICAgeG1wOk1vZGlmeURhdGU9IjIwMjQ6MDk6MjRUMjM6Mjg6NDYrMDM6MDAiPgogICA8eG1wTU06SGlzdG9yeT4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgc3RFdnQ6YWN0aW9uPSJzYXZlZCIKICAgICAgc3RFdnQ6Y2hhbmdlZD0iLyIKICAgICAgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDowZjk2NDY3Yi04ZTIyLTRjNjItYjYyZi05YzhhNWJmNWFhYzMiCiAgICAgIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkdpbXAgMi4xMCAoV2luZG93cykiCiAgICAgIHN0RXZ0OndoZW49IjIwMjQtMDktMjRUMjM6Mjg6NTkiLz4KICAgIDwvcmRmOlNlcT4KICAgPC94bXBNTTpIaXN0b3J5PgogIDwvcmRmOkRlc2NyaXB0aW9uPgogPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgIAo8P3hwYWNrZXQgZW5kPSJ3Ij8+oVSu3gAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+gJGBQcO+ItkZsAAADwSURBVGje7ZlBDsMgDATjqNf+slLfVKm/7APoKVVUATW2SWx395QcjBk2mADLAkEQBJ0gkgaWUkq1QSI6Il4F0ko+2hmrdoZBuImnfTYMIPIOwYWhCBAcGIoC8QtmTV1+vbrRcyWvI97daLmSxpE1ohupqtb3oF8sGr3fXp/nx/M6LWaqI/sO1d6tYthVSzI/eh1ojbIkhlO9clYtgADECUhrcvYmrSSGXbW0K/rZ6whtpSvyr8kGgjkCEIBM/NfytFPMuWeP5sp+357m8MHkpLF2zjRybaDN1QUZSSK907DMQdpkWoij2ocgCIKgv9Ab902CLuVys94AAAAASUVORK5CYII=" />
+                            </defs>
+                        </svg>
+                    </a>
                 </div>
-                <div class="offer__img">
-                    <div class="offer__img-inner">
-                        <img src="images/img-bg.png" alt="" class="offer__img-bg">
-                        <img src="images/img-main.png" alt="" class="offer__img-main">
+            </div>
+        </header>
+        <main class="main">
+            <section class="offer">
+                <div class="container">
+                    <div class="offer__inner">
+                        <img src="images/title.png" class="offer__inner-title" alt="Mineoff">
+                        <h1 class="offer__inner-subtitle">Проект, призванный подарить Вам улыбку!</h1>
+                        <ul class="offer__inner-servers">
+                            <li class="offer__inner-server">OF</li>
+                            <li class="offer__inner-server">?</li>
+                            <li class="offer__inner-server">?</li>
+                            <li class="offer__inner-server">?</li>
+                        </ul>
+                    </div>
+                    <div class="offer__img">
+                        <div class="offer__img-inner">
+                            <img src="images/img-bg.png" alt="" class="offer__img-bg">
+                            <img src="images/img-main.png" alt="" class="offer__img-main">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="modal">
+            <div class="modal__header">
+                <p class="modal__header-title">Информация о сервере</p>
+                <p class="modal__header-close">Х</p>
+            </div>
+            <p class="modal__desc">
+                OF - это наш основной ванильный сервер с платной проходкой.
+            </p>
+            <p class="modal__desc">
+                На нем вы можете найти новые знакомства, взаимоотношения и капельку нового контента.
+            </p>
+            <form action="admin.php" class="modal__form" method="post">
+                <input name='nickname' id="nickname" type="text" class="modal__form-input" placeholder="Никнейм">
+                <button type="submit" class="modal__form-submit">Купить 30Р</button>
+            </form>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__divider"></div>
+                    <div class="footer__content">
+                        <div class="footer__content-column">
+                            <div class="footer__content-title">Инфо</div>
+                            <div class="footer__content-items">
+                                <div class="footer__content-item">Сервера OFFmine не относятся к Mojang Studios</div>
+                                <div class="footer__content-item">Краснов Константин Максимович (ИНН 507561689400)</div>
+                            </div>
+                        </div>
+                        <div class="footer__content-column">
+                            <div class="footer__content-title">Документы</div>
+                            <div class="footer__content-items">
+                                <a href="#" class="footer__content-item">Договор-оферта</a>
+                            </div>
+                        </div>
+                        <div class="footer__content-column">
+                            <div class="footer__content-title">Связь</div>
+                            <div class="footer__content-items">
+                                <a href="mailto:kotyan31business@mail.ru"
+                                    class="footer__content-item">kotyan31business@mail.ru</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <div class="modal">
-        <div class="modal__header">
-            <p class="modal__header-title">Информация о сервере</p>
-            <p class="modal__header-close">Х</p>
-        </div>
-        <p class="modal__desc">
-            OF - это наш основной ванильный сервер с платной проходкой.
-        </p>
-        <p class="modal__desc">
-            На нем вы можете найти новые знакомства, взаимоотношения и капельку нового контента.
-        </p>
-        <form action="admin.php" class="modal__form" method="post">
-            <input name='nickname' id="nickname" type="text" class="modal__form-input" placeholder="Никнейм">
-            <button type="submit" class="modal__form-submit">Купить 30Р</button>
-        </form>
+        </footer>
     </div>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>
