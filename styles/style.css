@@ -33,13 +33,30 @@ body {
 
 .logo {
     cursor: pointer;
+    background-color: #1c3909;
+    /* padding: 12px; */
+    border-radius: 15px;
+    transition: all .3s;
+    height: 64px;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo:hover {
+    background-color: #3d6c1f;
 }
 
 .discord {
-    padding: 7px;
     background-color: #6663F2;
     border-radius: 15px;
     transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 64px;
 }
 
 .discord:hover {
