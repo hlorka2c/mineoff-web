@@ -18,11 +18,10 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1280px;
-    padding: 0 24px;
 }
 
 .header {
-    margin-top: 70px;
+    margin-top: 64px;
 }
 
 .header__inner {
@@ -34,7 +33,6 @@ body {
 .logo {
     cursor: pointer;
     background-color: #1c3909;
-    /* padding: 12px; */
     border-radius: 15px;
     transition: all .3s;
     height: 64px;
@@ -59,7 +57,10 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    gap: 105px;
+}
+
+.main {
+    margin-top: 215px;
 }
 
 .offer {
@@ -107,10 +108,10 @@ body {
 .offer__img {
     position: absolute;
     right: 0;
-    top: 0;
+    top: -15%;
     bottom: 0;
     margin: auto 0;
-    max-width: 36%;
+    max-width: 39.5%;
     width: auto;
 }
 
@@ -120,6 +121,7 @@ body {
 
 .offer__img-bg {
     max-width: 100%;
+    max-height: 512px;
 }
 
 .offer__img-main {
@@ -127,7 +129,7 @@ body {
     left: 0;
     margin: auto 0;
     max-width: 85%;
-    top: -5%;
+    top: -12.5%;
 }
 
 .modal {
@@ -294,6 +296,12 @@ body {
     }
 }
 
+@media screen and (max-width: 1320px) {
+    .container {
+        padding: 0 24px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .offer .container {
         display: flex;
@@ -373,7 +381,7 @@ body {
     }
 
     .main {
-        margin-top: 36px;
+        margin-top: 128px;
     }
 
     .footer__content-items {
