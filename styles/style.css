@@ -296,6 +296,16 @@ body {
     }
 }
 
+@media screen and (max-width: 1600px) {
+    .main {
+        margin-top: 120px;
+    }
+
+    .offer__img {
+        top: 0;
+    }
+}
+
 @media screen and (max-width: 1320px) {
     .container {
         padding: 0 24px;
