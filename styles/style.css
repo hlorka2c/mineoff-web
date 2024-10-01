@@ -44,10 +44,6 @@ body {
     justify-content: center;
 }
 
-.logo:hover {
-    background-color: #3d6c1f;
-}
-
 .discord {
     background-color: #6663F2;
     border-radius: 15px;
@@ -58,14 +54,6 @@ body {
     height: 64px;
     width: 64px;
 }
-
-.discord:hover {
-    background-color: #7d83f1;
-}
-
-/* .main {
-    padding: auto 0;
-} */
 
 .wrap {
     overflow-x: hidden;
@@ -109,10 +97,6 @@ body {
 }
 
 .offer__inner-server--active {
-    background-color: #93CE13;
-}
-
-.offer__inner-server:hover {
     background-color: #93CE13;
 }
 
@@ -262,15 +246,47 @@ body {
     transition: color .3s;
 }
 
-.footer__content-items a:hover {
-    color: #93CE13;
-}
-
 .footer__content-item {
     color: #9C9A9A;
     font-size: 22px;
     line-height: 28px;
     text-decoration: none;
+}
+
+@media (hover: hover) {
+    .logo:hover {
+        background-color: #3d6c1f;
+    }
+
+    .discord:hover {
+        background-color: #7d83f1;
+    }
+
+    .offer__inner-server:hover {
+        background-color: #93CE13;
+    }
+
+    .footer__content-items a:hover {
+        color: #93CE13;
+    }
+}
+
+@media (hover: none) {
+    .logo:active {
+        background-color: #3d6c1f;
+    }
+
+    .discord:active {
+        background-color: #7d83f1;
+    }
+
+    .offer__inner-server:active {
+        background-color: #93CE13;
+    }
+
+    .footer__content-items a:active {
+        color: #93CE13;
+    }
 }
 
 @media screen and (max-width: 1200px) {
