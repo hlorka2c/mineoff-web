@@ -83,7 +83,12 @@ body {
 .offer__inner-servers {
     display: flex;
     justify-content: space-between;
+}
+
+.offer__servers-wrap {
+    position: relative;
     width: 100%;
+    overflow-x: scroll;
 }
 
 .offer__inner-server {
@@ -413,6 +418,28 @@ body {
 
     .wrap {
         padding: 0 18px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .offer__inner-servers::before {
+        top: 0;
+        content: '';
+        position: absolute;
+        height: 93.6px;
+        left: -1%;
+        width: 10%;
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #050509 85%);
+    }
+
+    .offer__inner-servers::after {
+        content: '';
+        position: absolute;
+        height: 93.6px;
+        right: -1%;
+        width: 10%;
+        top: 0;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #050509 85%);
     }
 }
 
